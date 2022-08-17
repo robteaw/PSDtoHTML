@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert Tea</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <body>
+    <!-- Hero - Div 1 -->
+    <div class="hero">
+      <nav>
+        <a href="#"><img src="images/logo.png" alt="" /></a>
+        <ul>
+          <li><a href="#history">01. History</a></li>
+          <li><a href="#team">02. Team</a></li>
+        </ul>
+      </nav>
+      <div class="text">
+        <h1>LosAngeles</h1>
+        <h1><span>Mountains</span></h1>
+      </div>
+    </div>
+
+    <!-- Div 2 -->
+    <div class="second_nav">
+      <div class="logo">
+        <a href="#"><img src="images/logo.png" alt="" /></a>
+        <div class="logo_text">
+          <p>LosAngeles</p>
+          <p>Mountains</p>
+        </div>
+      </div>
+      <ul>
+        <li><a href="#history">01. History</a></li>
+        <li><a href="#team">02. Team</a></li>
+      </ul>
+    </div>
+    <div class="second_div">
+      <div class="history" id="history">
+        <span>
+          <h1>01.</h1>
+          <h2>History</h2>
+        </span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante
+          viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est.
+          Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras
+          scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis
+          hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec
+          congue.
+        </p>
+      </div>
+
+      <div class="container">
+        <!-- refernce - https://www.youtube.com/watch?v=3MoRr5sudO0&t=155s -->
+        <div class="carousel">
+            <div class="images">
+                <input type="radio" name="slide" id="img1" checked />
+                <input type="radio" name="slide" id="img2" />
+                <input type="radio" name="slide" id="img3" />
+                <input type="radio" name="slide" id="img4" />
+
+                <img src="images/carousel1.jpg" class="m1" alt="img1" />
+                <img src="images/carousel2.jpg" class="m2" alt="img2"  />
+                <img src="images/carousel1.jpg" class="m3" alt="img3"  />
+                <img src="images/carousel2.jpg" class="m4" alt="img4"  />
+            </div>
+            <div class="dots">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+                <label for="img4"></label>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Div 3 -->
+    <div class="climb" id="team">
+      <span>
+        <h1>02.</h1>
+        <h2>Climb</h2>
+      </span>
+      <p>
+        Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida
+        quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor
+        nec congue.
+      </p>
+    </div>
+
+    <div class="third_nav">
+      <div class="box_1" id="mountain_1">
+        <h2>Mountain 1</h2>
+      </div>
+      <div class="box_2" id="mountain_2">
+        <h2>Mountain 2</h2>
+      </div>
+    </div>
+
+    <div class="third_div" id="background">
+      <div class="schedule">
+        <h2>Schedule</h2>
+        <div class="box">
+          <div class="column">
+            <p>25 Nov 2016</p>
+            <p>28 Nov 2016</p>
+            <p class="p_space">18 Dec 2016</p>
+            <p>7 Jan 2017</p>
+          </div>
+          <div class="column">
+            <p>Vestibulum viverra</p>
+            <p>Vestibulum viverra</p>
+            <p class="p_space">Vestibulum viverra</p>
+            <p>Vestibulum viverra</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="logo">
+        <a href="#"><img src="images/logo.png" alt="" /></a>
+        <div class="logo_text">
+          <p>LosAngeles</p>
+          <p>Mountains</p>
+        </div>
+      </div>
+      <div class="copy">
+        <p>Copyright 2016. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Carousel -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- Accordion -->
+  <script>
+    // reference - https://www.fwait.com/how-to-change-background-image-in-javascript/
+    let btn1 = document.querySelector("#mountain_1");
+    let btn2 = document.querySelector("#mountain_2");
+
+    btn1.addEventListener("click", () => {
+      document.getElementById("background").style.backgroundImage =
+        "url('images/bottom.jpg')";
+    });
+    btn2.addEventListener("click", () => {
+      document.getElementById("background").style.backgroundImage =
+        "url('images/bottom2.jpg')";
+    });
+  </script>
+</html>
